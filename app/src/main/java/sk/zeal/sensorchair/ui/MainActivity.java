@@ -1,4 +1,4 @@
-package sk.zeal.sensorchair;
+package sk.zeal.sensorchair.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,21 +12,24 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import sk.zeal.sensorchair.R;
+
 public class MainActivity extends AppCompatActivity {
     public TextView statusUpdate;
     public Button connect;
     public Button disconnect;
 
 
-    @Override
-    public void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.content_main);
-        setupUI();
-    }
-    private void setupUI(){
+//    @Override
+//    public void onCreate(Bundle savedInstanceState){
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.content_main);
+//        setupUI();
+//    }
+    private void setupUI() {
         //get references
-        final TextView statusUpdate =(TextView) findViewById
+//        final TextView statusUpdate = (TextView) findViewById
+    }
 
 
 
