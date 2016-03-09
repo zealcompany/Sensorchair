@@ -85,6 +85,7 @@ public class BTDiscoverReceiver extends BaseReceiver{
 
     private void onStateChanged(Intent intent){
 //  TODO: To be implemented
+//        test comment
     }
 
     private void onCancel(){
