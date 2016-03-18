@@ -8,19 +8,71 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sk.zeal.sensorchair.MainActivity"
-    android:background="@drawable/chair">
+    android:background="@drawable/obrazok">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sensor1"
+        android:background="@drawable/red"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/sensor2"
+        android:layout_toEndOf="@+id/sensor2"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sensor2"
+        android:background="@drawable/red"
+        android:layout_alignTop="@+id/sensor3"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sensor3"
+        android:background="@drawable/red"
+        android:layout_below="@+id/sensor1"
+        android:layout_alignLeft="@+id/sensor1"
+        android:layout_alignStart="@+id/sensor1"
+        android:layout_marginTop="52dp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sensor4"
+        android:background="@drawable/red"
+        android:layout_alignTop="@+id/sensor5"
+        android:layout_alignLeft="@+id/sensor2"
+        android:layout_alignStart="@+id/sensor2" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sensor5"
+        android:background="@drawable/red"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/sensor3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BLUETOOTH"
-        android:id="@+id/button"
+        android:text="Connect "
+        android:id="@+id/button2"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
 
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView" />
+        android:text="DISCONNECT"
+        android:id="@+id/button3"
+        android:layout_above="@+id/sensor3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
